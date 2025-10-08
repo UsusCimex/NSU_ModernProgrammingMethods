@@ -1,7 +1,7 @@
 (defn my-map [f coll]
   (reduce
-   (fn [acc x] (concat acc (list (f x))))  ; добавляем элемент в конец
-   (list)                                  ; начальный аккумулятор
+   (fn [acc x] (concat acc (list (f x))))
+   (list)
    coll))
 
 (println (my-map inc (list 1 2 3 4)))
@@ -14,7 +14,7 @@
   (reduce
    (fn [acc x]
      (if (pred x)
-       (concat acc (list x))   ; добавляем только если pred(x) true
+       (concat acc (list x)) 
        acc))
    (list)
    coll))
