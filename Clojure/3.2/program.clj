@@ -32,7 +32,7 @@
 
 ; Тяжёлый предикат для демонстрации
 (defn heavy-predicate [n]
-  (Thread/sleep 100)
+  (Thread/sleep 10)
   (odd? n))
 
 ; Тесты
