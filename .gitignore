@@ -1,3 +1,4 @@
 # Clojure временные файлы
 **/.clj-kondo/
 **/.lsp/
+**/.cpcache/
